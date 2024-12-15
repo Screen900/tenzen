@@ -1,0 +1,120 @@
+/* إعدادات أساسية */body {
+    background-image: url('/storage/emulated/0/Download/8a1f6701-868e-4086-b8c4-08d98a39c479.jpeg'), 
+                      url('images/8a1f6701-868e-4086-b8c4-08d98a39c479.jpeg'); /* مسار جهازك ثم مسار GitHub */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* العنوان الرئيسي */
+header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 5px solid #333;
+}
+
+header h1 {
+    font-size: 3.5em;
+    margin: 0;
+    color: #222;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+header p {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* الأقسام */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 3px solid #333;
+    position: relative;
+}
+
+section h2 {
+    font-size: 2.5em;
+    color: #222;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+section p {
+    text-align: justify;
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+/* إطار الكوميكس */
+.comic-panel {
+    border: 5px dashed #333;
+    padding: 15px;
+    background-color: #fff;
+    position: relative;
+}
+
+/* فقاعات الحوار */
+.comic-panel:after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 20px;
+    background: #fff;
+    border: 5px dashed #333;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+/* الزر */
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #555;
+    transform: scale(1.05);
+}
+
+/* التفاصيل المخفية */
+.hidden {
+    display: none;
+}
+
+/* الفوتر */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 0.9em;
+    border-top: 5px solid #222;
+}
